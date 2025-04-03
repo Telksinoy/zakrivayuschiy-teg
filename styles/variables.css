@@ -1,1 +1,20 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main-font: 'Inter', sans-serif; /* Основной шрифт */
+    --accent-font: 'PressStart2P', sans-serif; /* Акцентный шрифт */
+  
+    /* Веса шрифтов для светлой темы */
+    --card-text-weight-light: 400;
+    --card-title-weight-light: 700;
+  
+    /* Веса шрифтов для тёмной темы */
+    --card-text-weight-dark: 465;
+    --card-title-weight-dark: 785;
+
+    --main-bg-color: #FFFFFF; /* Исходный цвет фона для светлой темы */
+    --accent-color: #000000; /* Исходный акцентный цвет */
+    --background-pattern: url('/svg/pattern-light.svg');
+
+    --section-width: clamp(375px, 48.6%, 1440px);
+  }
+
