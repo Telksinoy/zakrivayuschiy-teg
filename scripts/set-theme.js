@@ -10,8 +10,8 @@ themeButtons.forEach((button) => {
 });
 
 function changeTheme(theme) {
-  document.body.className = 'page';
-  document.body.classList.add(`theme-${theme}`);
+  document.documentElement.className = ''; // очищаем классы на <html>
+  document.documentElement.classList.add(`theme-${theme}`); // добавляем новый класс
   setDisabled(theme);
   localStorage.setItem('theme', theme);
 }

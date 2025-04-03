@@ -12,3 +12,23 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes moveArrow {
+    0% {
+      transform: translateX(0) translateY(-50%);
+    }
+    100% {
+      transform: translateX(4px) translateY(-50%);
+    }
+  }
+  
+  .theme-menu__button:disabled::before {
+    content: ' ▶';
+    font-family: var(--accent-font);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -10px;
+    animation: moveArrow 0.5s ease-in-out infinite alternate;
+  }
